@@ -521,12 +521,12 @@
     <div class="glow g1"></div>
     <div class="glow g2"></div>
 
-    <!-- Màn hình nhập tên người nhận -->
+    <!-- Màn hình nhập tên -->
     <div id="input-screen">
       <div class="input-box">
         <h2>Gửi lời chúc 20/10 🌸</h2>
-        <p>Nhập tên người bạn muốn gửi gắm:</p>
-        <input type="text" id="name-input" placeholder="Ví dụ: Kim Sang" autocomplete="off" />
+        <p>Nhập tên của bạn:</p>
+        <input type="text" id="name-input" autocomplete="off" />
         <button id="submit-btn">Bắt đầu 💌</button>
       </div>
     </div>
@@ -592,7 +592,7 @@
         if (!inputVal) {
           inputVal = "Bạn"; // Tên mặc định nếu để trống
         }
-        
+
         // Gán dữ liệu dựa vào tên vừa nhập
         CFG.name = inputVal.toUpperCase();
         CFG.l2 = inputVal.toUpperCase();
@@ -616,7 +616,7 @@
         build($("l1"), CFG.l1, "l1");
         build($("l2"), CFG.l2, "l2");
         total = flyers.length;
-        
+
         // Khởi động hiệu ứng bay chữ
         (document.fonts && document.fonts.ready
           ? document.fonts.ready
